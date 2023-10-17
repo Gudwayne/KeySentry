@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link type="image/png" sizes="16x16" rel="icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="brand">
+                <a class="tint button" href="javascript:;" onclick="displayModal('keys-modal');"> <i class="fa fa-key" aria-hidden="true"></i>&nbsp; View Passwords</a>
+                <a class="tint button" href="javascript:;" onclick="displayModal('add-password-modal');"><i class="fa fa-plus fa-2x"></i>&nbsp; Add</a>
+            </div>
+            <ul>
+                <li><a class="tint button" href="javascript:;" onclick="displayModal('generator-modal');">Generator</a></li>
+                <li><a class="redit button" href="index.html">Log out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <!-- Modal -->
+        <div class="modals-wrapper">
+            <span id="close-modal" title="close"><i class="fa fa-times"></i></span>
+
+            <!-- add password modal -->
+            <div class="modal genmode" id="add-password-modal">
+                <form action="">
+                    <h2>Add New</h2>
+                    <input type="text" name="url" placeholder="url of website">
+                    <input type="text" name="email" placeholder="email">
+                    <input type="password" name="password" placeholder="password">
+                    <a href="" class="blue button">save</a>
+                </form>
+            </div>
+
+            <!-- generator modal -->
+            <div class="modal addmode" id="generator-modal">
+                <form action="">
+                    <h2>Generate Key</h2>
+                    <input type="password" name="password" placeholder="-- Generated Password--" readonly><br>
+                    <i class="fas fa-copy copy"  title="copy to clipboard"></i><br>
+                    <a href="" class="button inp gen"><i class="fas fa-cog fa-2x gear"></i> <span>Generate</span></a>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="thekeys" id="keys-modal">
+            <!-- <span id="close-keys" title="hide"><i class="fa fa-times"></i></span> -->
+
+            <div class="container">
+                <div class="card">
+                    <div class="actions">&nbsp;Actions <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        <a href="" class="action-item">Delete</a>
+                    </div>
+                    <img width="50" height="50" src="https://cdn.pixabay.com/photo/2016/04/13/14/27/google-chrome-1326908_1280.png" alt="">
+                    <div class="name"> Google Account</div>
+                    <input type="email" name="email" placeholder="email" value="copy sample text" readonly> <i class="fas fa-copy copy"  title="copy to clipboard"></i>
+                    <input type="password" name="password" placeholder="password" value="123456789" readonly> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                </div>
+                <div class="card">
+                    <div class="actions">&nbsp;Actions <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        <a href="" class="action-item">Delete</a>
+                    </div>
+                    <img width="50" height="50" src="https://cdn.pixabay.com/photo/2016/04/13/14/27/google-chrome-1326908_1280.png" alt="">
+                    <div class="name"> Google Account</div>
+                    <input type="email" name="email" placeholder="email"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                    <input type="password" name="password" placeholder="password"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                </div>
+                <div class="card">
+                    <div class="actions">&nbsp;Actions <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        <a href="" class="action-item">Delete</a>
+                    </div>
+                    <img width="50" height="50" src="https://cdn.pixabay.com/photo/2016/04/13/14/27/google-chrome-1326908_1280.png" alt="">
+                    <div class="name"> Google Account</div>
+                    <input type="email" name="email" placeholder="email"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                    <input type="password" name="password" placeholder="password"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                </div>
+                <div class="card">
+                    <div class="actions">&nbsp;Actions <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        <a href="" class="action-item">Delete</a>
+                    </div>
+                    <img width="50" height="50" src="https://cdn.pixabay.com/photo/2016/04/13/14/27/google-chrome-1326908_1280.png" alt="">
+                    <div class="name"> Google Account</div>
+                    <input type="email" name="email" placeholder="email"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                    <input type="password" name="password" placeholder="password"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                </div>
+                <div class="card">
+                    <div class="actions">&nbsp;Actions <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        <a href="" class="action-item">Delete</a>
+                    </div>
+                    <img width="50" height="50" src="https://cdn.pixabay.com/photo/2016/04/13/14/27/google-chrome-1326908_1280.png" alt="">
+                    <div class="name"> Google Account</div>
+                    <input type="email" name="email" placeholder="email"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                    <input type="password" name="password" placeholder="password"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                </div>
+                <div class="card">
+                    <div class="actions">&nbsp;Actions <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        <a href="" class="action-item">Delete</a>
+                    </div>
+                    <img width="50" height="50" src="https://cdn.pixabay.com/photo/2016/04/13/14/27/google-chrome-1326908_1280.png" alt="">
+                    <div class="name"> Google Account</div>
+                    <input type="email" name="email" placeholder="email"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                    <input type="password" name="password" placeholder="password"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                </div>
+                <div class="card">
+                    <div class="actions">&nbsp;Actions <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        <a href="" class="action-item">Delete</a>
+                    </div>
+                    <img width="50" height="50" src="https://cdn.pixabay.com/photo/2016/04/13/14/27/google-chrome-1326908_1280.png" alt="">
+                    <div class="name"> Google Account</div>
+                    <input type="email" name="email" placeholder="email"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                    <input type="password" name="password" placeholder="password"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                </div>
+                <div class="card">
+                    <div class="actions">&nbsp;Actions <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        <a href="" class="action-item">Delete</a>
+                    </div>
+                    <img width="50" height="50" src="https://cdn.pixabay.com/photo/2016/04/13/14/27/google-chrome-1326908_1280.png" alt="">
+                    <div class="name"> Google Account</div>
+                    <input type="email" name="email" placeholder="email"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                    <input type="password" name="password" placeholder="password"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                </div>
+                
+
+            </div>
+        </div>
+    </section>
+
+
+
+            <!-- password modal -->
+            <!-- <div class="modal" id="password-modal">
+                <h2>URL or Name</h2>
+                <img width="80" height="80" src="images/load.jpg" alt="">
+                <input type="email" name="email" placeholder="email"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+                <input type="password" name="password" placeholder="password"> <i class="fas fa-copy copy" title="copy to clipboard"></i>
+            </form>
+        </div> -->
+
+
+    <footer>
+        <p>&copy; 2023 Godwin JC.</p>
+    </footer>
+    <script src="main.js" defer></script>
+</body>
+</html>
