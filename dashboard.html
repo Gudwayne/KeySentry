@@ -29,7 +29,7 @@
             <span id="close-modal" title="close"><i class="fa fa-times"></i></span>
 
             <!-- add password modal -->
-            <div class="modal genmode" id="add-password-modal">
+            <div class="modal" id="add-password-modal">
                 <form action="">
                     <h2>Add New</h2>
                     <input type="text" name="url" placeholder="url of website">
@@ -40,12 +40,12 @@
             </div>
 
             <!-- generator modal -->
-            <div class="modal addmode" id="generator-modal">
-                <form action="">
-                    <h2>Generate Key</h2>
-                    <input type="password" name="password" placeholder="-- Generated Password--" readonly><br>
+            <div class="modal" id="generator-modal">
+                <form class="encrypt" action="">
+                    <h2>Generate Strong Key</h2>
+                    <input id="keygen" type="text" name="password" placeholder="-- Generated Password--" readonly>
                     <i class="fas fa-copy copy"  title="copy to clipboard"></i><br>
-                    <a href="" class="button inp gen"><i class="fas fa-cog fa-2x gear"></i> <span>Generate</span></a>
+                    <a href="javascript:;" onclick="generateStrongPassword(10)" class="gen button "><i class="fas fa-cog fa-2x gear"></i> <span>Generate</span></a>
                 </form>
             </div>
         </div>
