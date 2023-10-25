@@ -41,7 +41,7 @@ a:hover{
 input{
     /* display: flex; */
     width: 80%;
-    margin: 10px auto;
+    margin: 15px auto;
     padding: 5px;
     /* border: none; */
     align-items: center;
@@ -85,7 +85,7 @@ header{
     border: 0.1px solid rgba(255,255,255,.19);
     border-radius: 5px;
     backdrop-filter: blur(20px);
-    box-shadow: 0 10px 15px -3px var(--gray-color);
+    /* box-shadow: 0 10px 15px -3px var(--gray-color); */
     width: 100%;
     /* height: 70px; */
     /* position: fixed ; */
@@ -136,14 +136,18 @@ header nav ul li{
 /* ### footer ### */
 
 footer{
-    background-color: var(--global-background-color);
+    /* background-color: var(--global-background-color); */
     position: fixed;
     bottom: 0;
     text-align: center;
     left: 0;
     padding: 10px;
+    background: rgba(26, 31, 46, 0.22);
+    /* border: 0.1px solid rgba(255,255,255,.19); */
+    border-radius: 5px;
+    backdrop-filter: blur(20px);
     width: 100%;
-    box-shadow: 0 10px 15px 11px var(--gray-color);
+    /* box-shadow: 0 10px 15px 11px var(--gray-color); */
 }
 footer p{
     margin-top: 10px;
@@ -206,9 +210,31 @@ footer p{
     /* margin: auto;
     margin-top: 30px; */
 }
-.line{
-    border-top: 1px solid rgba(255,255,255,.19);
-    width: 20px;
+#login-modal .type1{
+    background-color: transparent;
+
+}
+
+.or-divider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px 0;
+    opacity: 0.5;
+}
+  
+.or-divider hr{
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0 10px;
+    display: inline-block;
+    width: 33%;
+}
+
+.or-divider span{
+    /* font-weight: bold;/ */
+    margin-bottom: 3px;
 }
 
 #generator-modal, #add-password-modal{
@@ -248,7 +274,7 @@ footer p{
 /* 1 */
 .pens4{
     position: absolute;
-    left: 15%;
+    left: 14%;
     top: 30%;
     z-index: -1;
     animation: bounce 1.5s infinite alternate;
@@ -264,7 +290,7 @@ footer p{
 /* 3 */
 .pens1{
     position: absolute;
-    left: 11%;
+    left: 10%;
     top: 75%;
     z-index: -1;
     /* animation: bounce 1.5s infinite alternate; */
@@ -289,7 +315,7 @@ footer p{
 /* 6 */
 .pens5{
     position: absolute;
-    left: 84%;
+    left: 86%;
     top: 70%;
     z-index: -1;
     animation: bounce 1.5s infinite alternate;
@@ -313,7 +339,10 @@ footer p{
 /* #### About ### */
 
 .about{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin-top: 200px;
     margin-bottom: 200px;
@@ -331,9 +360,7 @@ article{
     width: 80%;
 }
 article p{
-
-    width: 510px;
-
+    width: 520px;
 }
 .art-h1{
     font-size: 50px;
@@ -345,10 +372,20 @@ article p{
 
 .redit{
     color: var(--link-background-color);
+    transition: color 0.9s;
+
+    &:hover{
+        color: #FF5733;
+        text-shadow: 0 0 15px #FF5733;
+        border: 0.1px solid var(--link-background-color);
+    }
 }
 
 .tint{
     color: var(--text-hover-color);
+}
+.tint:hover{
+    color: aquamarine;
 }
 
 .thekeys{
@@ -361,14 +398,29 @@ section{
 
 .gen{
     height: 40px;
-    width: 80%;
+    width: 100%;
     margin: 20px;
     color: var(--text-hover-color);
+}
+.gen:hover{
+    color: var(--text-hover-color);
+    border: 1px solid rgb(68, 133, 68);
 }
 .gear{
     margin-right: 7px;
     margin-bottom: -10px;
 }
+.encrypt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+.encrypt input{
+    width: 100%;
+}
+
+
 
 /* #### card ### */
 
@@ -414,19 +466,24 @@ section{
     display: flex;
 }
 
+@media screen and (max-width: 1300px) {
+    .show .img{
+        display: none;
+    }
+    article{
+        flex-direction: column;
+        margin: 80px 40px;
+    }
+}
+
 @media screen and (max-width: 756px) {
     .container{
         grid-template-columns: 1fr 1fr;
     }
 
-    .show .img{
-        display: none;
-    }
+    
 
-    article{
-        flex-direction: column;
-        margin: 80px 40px;
-    }
+    
     article p{
         width: 310px;
     }
@@ -452,5 +509,8 @@ section{
     .pens2{
         left: 90%;
     }
-}
 
+    article p{
+        width: 350px;
+    }
+}
