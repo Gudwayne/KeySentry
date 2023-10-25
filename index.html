@@ -6,6 +6,7 @@
     <title>Key Sentry</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
     <link type="image/png" sizes="16x16" rel="icon" href="/images/favicon.png">
     <script src="main.js" defer></script>
@@ -15,15 +16,15 @@
     <header class="home-header">
         <nav>
             <div class="brand"><a href=""> <i class="fa fa-lock logo" aria-hidden="true"></i>&nbsp; Key Sentry</a></div>
+            
             <ul>
                 <!-- <li><a href="javascript:;" onclick="displayModal('login-modal');">Login/SignUp</a></li> -->
                 <li><a href="#login-modal">Login/SignUp</a></li>
-                <li><a href="#preview">About</a></li>
+                <li><a href="#">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- ### The Login View ### -->
 
     <div class="show">
         <div class="img">
@@ -38,27 +39,28 @@
         <img class="pens5" src="images/Ellipse 6.png" alt="">
 
 
-        <div class="modal entry" id="login-modal">
+        <div class="modal" id="login-modal">
             <form action="">
                 <h2>Sign in</h2>
-                <input type="email" name="email" placeholder="- - Enter your email - -">
+                <input class="type1" type="email" name="email" placeholder="- - Enter your email - -">
                 <!-- <input type="password" name="password" placeholder="password"><br> -->
                 <a href="dashboard.html" class="button blue">Continue</a><br>
-                <span class="line"></span>
-                <span class="dtext">or</span>
-                <span class="line"></span><br>
+
+                <div class="or-divider">
+                    <hr>
+                    <span>or</span>
+                    <hr>
+                </div>
+
                 <a href="" class="button inp">
                     <img class="pk" src="images/passkey.svg" alt="Passkey Icon">
                     &nbsp;Sign in with a passkey</a>
-
             </form>
 
         </div>
     </div>
 
-    <!-- ### The About section ### -->
-
-    <div class="about" id="preview">
+    <div class="about">
         <h1 class="typeText" id="typewriter-heading"></h1>
 
         <article>
@@ -66,23 +68,23 @@
 
             <p>
                 <span class="art-h1">Introduction:</span><br>
-                In an era where digital accounts and online services have become an 
-                integral part of our daily lives, forgetting login passwords is an 
-                increasingly common frustration. Key Sentry is the ultimate solution 
-                to this problem, designed to simplify and secure your online experiences. 
-                It's your digital keychain, your fortress against forgetfulness, and your 
+                In an era where digital accounts and online services have become an
+                integral part of our daily lives, forgetting login passwords is an
+                increasingly common frustration. Key Sentry is the ultimate solution
+                to this problem, designed to simplify and secure your online experiences.
+                It's your digital keychain, your fortress against forgetfulness, and your
                 trusted guardian of online security.</p>
 
         </article>
         <article>
             <p>
-                <span class="art-h1">Features:</span> <br>
-                Military-Grade Encryption: Your security is our top priority.  
-                Key Sentry employs state-of-the-art encryption protocols to 
-                ensure that your stored passwords are virtually impenetrable. 
-                Your data is safe and only accessible to you. 
-                Password Generator: Worried about creating strong, unique 
-                passwords? Key Sentry comes with a password generator that 
+                <span class="art-h1">Features:</span><br>
+                Military-Grade Encryption: Your security is our top priority. 
+                Key Sentry employs state-of-the-art encryption protocols to
+                ensure that your stored passwords are virtually impenetrable.
+                Your data is safe and only accessible to you.<br>
+                Password Generator: Worried about creating strong, unique
+                passwords? Key Sentry comes with a password generator that
                 creates complex, hacker-resistant passwords for your accounts. 
             </p>
 
@@ -92,13 +94,17 @@
             <img src="images/art3.jpg" width="350" height="350" alt="">
 
             <p>
-                <span class="art-h1">Why?</span> <br>
-                In an era where digital accounts and online services have become an 
-                integral part of our daily lives, forgetting login passwords is an 
-                increasingly common frustration. Key Sentry is the ultimate solution 
-                to this problem, designed to simplify and secure your online experiences. 
-                It's your digital keychain, your fortress against forgetfulness, and your 
-                trusted guardian of online security.</p>
+                <span class="art-h1">Why?</span><br>
+                One might question the necessity of a password manager. Yet, 
+                amidst this digital transformation, there still exists a demographic,
+                including individuals who appreciate the simplicity and reliability 
+                of traditional methods. They maintain handwritten password records, 
+                a practice both nostalgic and pragmatic. This is where KeySentry distinguishes 
+                itself – it addresses the timeless challenge of forgetting passwords or 
+                misplacing handwritten notes. Moreover, KeySentry offers the unique advantage of 
+                eliminating the need for conventional passwords, ushering in a new era of secure 
+                and convenient access. More than that, you do not need a password to use KeySentry. Thanks to Hanko!
+            </p>
 
         </article>
     </div>
