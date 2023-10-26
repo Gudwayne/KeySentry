@@ -451,7 +451,7 @@ section{
     margin: 5px;
     cursor: pointer;
     padding: 5px;
-    border: solid 0.3px var(--link-background-color);
+    border: solid 0.3px var(--text-hover-color);
 }
 
 .actions a{
@@ -462,9 +462,9 @@ section{
     align-items: center;
 }
 
-.actions:hover a{
+/* .actions:hover a{
     display: flex;
-}
+} */
 
 @media screen and (max-width: 1300px) {
     .show .img{
