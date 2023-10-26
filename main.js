@@ -1,3 +1,13 @@
+document.querySelector('ul').addEventListener('click', function (event) {
+    if (event.target.tagName === 'A' && event.target.getAttribute('href') === '#l/s') {
+      event.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+});
+
 //display modal on click
 
 const modalWrapper = document.querySelector(".modals-wrapper");
