@@ -292,7 +292,7 @@ footer p{
     left: 39.5%;
     top: 32%;
     z-index: -1;
-    /* animation: bounce 1.5s infinite alternate; */
+    animation: bounce 1.5s infinite alternate;
 }
 /* 3 */
 .pens1{
@@ -300,7 +300,7 @@ footer p{
     left: 10%;
     top: 75%;
     z-index: -1;
-    /* animation: bounce 1.5s infinite alternate; */
+    animation: bounce 1.5s infinite alternate;
 }
 /* 4 */
 .pens6{
